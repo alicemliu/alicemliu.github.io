@@ -1,0 +1,63 @@
+body {
+  font-family: sans-serif;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-template-rows: 100vh;
+    grid-template-areas:
+      "nav main";
+    justify-content: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .grid {
+    display: grid;
+    grid-template-areas:
+      "nav" 
+      "main";
+  }
+}
+
+.about {
+  grid-area: nav;
+
+  background-color: lightblue;
+  border: 1px solid #ddd;
+
+  justify-self: stretch;
+  align-self: center;
+
+  margin: 10px;
+}
+
+h1 {
+  color: green;
+  font-size: 2.5em;
+}
+
+p {
+  color: blue;
+}
+
+.icons {
+}
+
+.content {
+  grid-area: main;
+  color: red;
+  background-color: lightpink;
+  overflow: auto;
+
+  margin: 10px;
+}
+
+.card {
+  height: 500px;
+  border: 1px solid #ddd;
+  margin: 10px;
+}
