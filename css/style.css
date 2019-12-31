@@ -1,50 +1,54 @@
 body {
   font-family: sans-serif;
+  background-color: aliceblue;
 }
 
-@media (min-width: 768px) {
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 1em;
+  grid-template-rows: 1em repeat(2, 75vh);
+  grid-template-areas:
+    "header"
+    "about"
+    "main";
+  justify-content: center;
+}
+
+/*@media (min-width: 768px) {
+  
+}*/
+
+/*@media (min-width: 320px) and (max-width: 767px) {
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 1em;
-    grid-template-rows: 100vh;
     grid-template-areas:
-      "nav main";
+      "header"
+      "about"
+      "main";
     justify-content: center;
   }
 }
-
-@media (min-width: 320px) and (max-width: 767px) {
-  .grid {
-    display: grid;
-    grid-template-areas:
-      "nav" 
-      "main";
-  }
+*/
+.header {
+  grid-area: header;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  height: ;
 }
 
 .about {
-  grid-area: nav;
+  grid-area: about;
+  max-width: 700px;
 
-  background-color: lightblue;
+  /*background-color: lightblue;*/
   border: 1px solid #ddd;
 
-  justify-self: stretch;
+  justify-self: center;
   align-self: center;
 
   margin: 10px;
-}
-
-h1 {
-  color: green;
-  font-size: 2.5em;
-}
-
-p {
-  color: blue;
-}
-
-.icons {
 }
 
 .content {
@@ -54,6 +58,44 @@ p {
   overflow: auto;
 
   margin: 10px;
+}
+
+h1 {
+  color: #F95A55;
+  font-size: 2.5em;
+}
+
+p {
+  color: #BC827B;
+}
+
+line {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  border-width: 0;
+  border-top: 2px solid #000;
+  width: 40px;
+  text-align: left;
+  margin-left: 0;
+}
+
+a:link {
+  color: #FEB4AB;
+}
+
+a:visited {
+  color: #FEB4AB;
+}
+
+a:hover {
+  color: #FDD0CA;
+}
+
+a:active {
+  color: #FDD0CA;
+}
+
+.icons {
 }
 
 .card {
