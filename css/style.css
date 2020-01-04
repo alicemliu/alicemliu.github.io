@@ -14,7 +14,6 @@ body {
 
   min-height: 100vh;
 
-  color: #798897;
   font-family: 'Nunito', serif;
   font-weight: 300;
 }
@@ -24,7 +23,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: stretch;
-  max-width: 650px;
+  max-width: 700px;
 
   margin: auto;
   padding-top: 2.5rem;
@@ -50,7 +49,7 @@ body {
 
 @media (min-width: 700px) {
   .nav li:last-child {
-    margin-right: calc((100vw - 650px) / 2);
+    margin-right: calc((100vw - 700px) / 2);
   }
 }
 
@@ -87,8 +86,17 @@ ul {
 }
 
 .card {
-  border: 1px solid #ddd;
-  margin-top: 1rem;
+  border: 1px solid #FEB4AB;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  /*box-shadow: 0 50px 100px rgba(50,50,93,.05),0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.1);*/
+  overflow: hidden;
+  color: #798897;
+}
+
+.card:hover {
+  background: #FEB4AB;
+  color: white;
 }
 
 h1 {
@@ -106,9 +114,16 @@ h2 {
   font-weight: 400;
 }
 
-p {
+h3 {
+  color: #798897;
   font-size: 1.3rem;
+  font-weight: 300;
   margin-bottom: 1.5rem;
+}
+
+p {
+  margin: 0.8rem;
+  text-align: left;
 }
 
 pink {
