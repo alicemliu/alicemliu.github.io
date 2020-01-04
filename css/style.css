@@ -41,7 +41,7 @@ body {
   position: fixed;
 
   background-color: aliceblue;
-  box-shadow: 0px -30px 50px 13px #798897;;
+  box-shadow: 0px -30px 40px 13px #798897;;
 }
 
 .nav li:last-child {
@@ -57,6 +57,7 @@ body {
 .nav li {
   color: #798897;
   font-family: 'Nunito', serif;
+  font-size: 1.2rem;
   font-weight: 300;
 }
 
