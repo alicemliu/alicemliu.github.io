@@ -23,7 +23,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: stretch;
-  max-width: 700px;
+  max-width: 650px;
 
   margin: auto;
   padding: 2.5rem
@@ -47,14 +47,14 @@ body {
 
 @media (min-width: 700px) {
   .nav li:last-child {
-    margin-right: calc((100vw - 700px) / 2);
+    margin-right: calc((100vw - 650px) / 2);
   }
 }
 
 .nav li {
   color: #798897;
   font-family: 'Nunito', serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
@@ -90,6 +90,22 @@ ul {
   /*box-shadow: 0 50px 100px rgba(50,50,93,.05),0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.1);*/
   overflow: hidden;
   color: #798897;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.tag_cont {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.tag_cont li {
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  color: white;
+  background: #798897;
+  padding: 0.5rem;
+  font-size: 0.7rem;
 }
 
 .card:hover {
@@ -114,13 +130,24 @@ h2 {
 
 h3 {
   color: #798897;
+  font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 1.5rem;
 }
 
+h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
 p {
-  margin: 1rem;
   text-align: left;
+}
+
+.footer {
+  font-size: 0.7rem;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 pink {
@@ -134,9 +161,7 @@ line {
   border-width: 0;
   border-top: 2px solid #000;
   border-color: #FEB4AB;
-  width: 40px;
-  text-align: left;
-  margin-left: 10px;
+  width: 100%;
 }
 
 a {
