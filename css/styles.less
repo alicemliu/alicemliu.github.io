@@ -120,6 +120,17 @@ h3 {
   font-family: @body-font;
   font-weight: 500;
 }
+@media only screen and (max-width: @mobile-breakpoint) {
+  h1 {
+    font-size: 2em;
+    &.name {
+      font-size: 5em;
+    }
+  }
+  h2 {
+    font-size: 3em;
+  }
+}
 p {
   font-family: @body-font;
   font-weight: 300;
